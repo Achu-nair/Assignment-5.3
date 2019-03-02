@@ -15,7 +15,7 @@ vec1 = c(rownames(mtcars[1:15,]))
 
 vec2 = c(rownames(mtcars[11:25,]))
 
-![](assignment_5_3_3sol.PNG)
+![](assignment_5_3_1sol.PNG)
 
 3.What is the major difference between str_c() and paste()
 show an example.
