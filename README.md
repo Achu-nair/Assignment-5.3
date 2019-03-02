@@ -1,23 +1,24 @@
 # Assignment-5.3
 Assignments for Acadguild
 
-vec1 = c(rownames((mtcars[1:15,])))
+1. Test whether two vectors are exactly equal (element by
+element)
+vec1 = c(rownames(mtcars[1:15,]))
+vec2 = c(rownames(mtcars[11:25,]))
+2. Sort the character vector in ascending order and descending
+order
+vec1 = c(rownames(mtcars[1:15,]))
 vec2 = c(rownames(mtcars[11:25,]))
 
-#test if 2 vectors Re exactly equal
- vec1 == vec2
+3.What is the major difference between str_c() and paste()
+show an example.
 
-#sort in ascending order
-sort(vec1,decreasing = FALSE)
-sort(vec2,decreasing = FALSE) 
+str_c():
+<bp>the default separator is an empty string.
+<bp>combining any strings with a missing value will result in another missing value.
 
-#sort in descending order
-sort(vec1,decreasing = TRUE)
-sort(vec2,decreasing = TRUE)
+Paste():
+the default separator is space.
+turns missing values into the string "NA"
 
-What is the major difference between str() and paste(). give example
-
-Str() wil let you print the data type in the data frame. Paste() will print the elements of the data type.
-
-#using paste and introducing a seperator between strings
-paste("this is first class","Category 1",sep = "-")
+Introduce a separator when concatenating the strings
